@@ -244,7 +244,7 @@ public class ExcelToEntity<T>
 							if (eef.getColumnName().indexOf(header.getName())>= 0 )
 							{
 								System.out.println("cell:"+cell.getCellType());
-								System.out.println("eef :"+eef.getColumnType());
+								System.out.println("eef :"+eef.getColumnType()+eef.getColumnName()+eef.getColumnIndex()+getCellValue(cell));
 								if (eef.getColumnType() > -1 && cell.getCellType() != eef.getColumnType())
 								{}
 //									throw new LogicException(ErrorCode.FAILED, "单元格数据内容格式不正确：列名:" + header.getName() + ",行号:" + (rowIndex + 1) + "");
